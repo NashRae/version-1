@@ -1,0 +1,68 @@
+.page-title {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(40px, 5.5vw, 72px);
+  font-weight: 800;
+  line-height: 0.97;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.page-description {
+  font-size: 17px;
+  color: var(--t2);
+  margin-bottom: 56px;
+  max-width: 440px;
+  line-height: 1.72;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg2);
+  border: 1px solid var(--brd);
+  border-radius: 12px;
+  transition: border-color 0.2s;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  border-color: var(--brd2);
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(0, 102, 255, 0.1);
+  border: 1px solid var(--brd2);
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: var(--t3);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.contact-value {
+  font-size: 14px;
+  color: var(--b2);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
