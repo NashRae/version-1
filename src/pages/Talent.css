@@ -1,0 +1,58 @@
+.page-title {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(36px, 5vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  color: var(--tx-heading);
+  margin-bottom: 16px;
+  font-feature-settings: "ss01";
+}
+
+.page-description {
+  font-size: 17px;
+  color: var(--tx);
+  margin-bottom: 48px;
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.filter-select,
+.filter-input {
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid var(--brd);
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: var(--tx-heading);
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.filter-input {
+  cursor: text;
+  min-width: 260px;
+}
+
+.filter-input:focus {
+  border-color: var(--b);
+  box-shadow: 0 0 0 2px rgba(83, 58, 253, 0.1);
+}
+
+.filter-select:hover {
+  background: var(--bg2);
+}
+
+.talent-page-wrapper {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}

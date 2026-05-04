@@ -1,0 +1,127 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 27, 49, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-box {
+  background: #ffffff;
+  border: 1px solid var(--brd);
+  border-radius: 12px;
+  padding: 56px 48px 48px;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  box-shadow: var(--shd-standard);
+  overflow: hidden;
+}
+
+.modal-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--b), var(--magenta), var(--cyan));
+}
+
+
+
+.modal-box h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--tx-heading);
+  margin-bottom: 8px;
+  font-feature-settings: "ss01";
+}
+
+.modal-box > p {
+  font-size: 15px;
+  color: var(--tx);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--tx);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid var(--brd);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.modal-contact-link:hover {
+  border-color: var(--b);
+  background: #ffffff;
+  box-shadow: var(--shd-ambient);
+  transform: translateY(-2px);
+}
+
+.modal-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid var(--brd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--b);
+  flex-shrink: 0;
+}
+
+.modal-contact-link span {
+  font-size: 13px;
+  color: var(--tx);
+}
+
+.modal-contact-link b {
+  display: block;
+  font-size: 15px;
+  color: var(--tx-heading);
+  margin-bottom: 2px;
+}
+
+.modal-note {
+  font-size: 12px;
+  color: var(--tx);
+  margin-top: 24px;
+  text-align: center;
+  opacity: 0.7;
+}
