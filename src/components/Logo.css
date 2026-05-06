@@ -19,3 +19,7 @@
   color: var(--b);
   font-weight: 700;
 }
+.img-logo{
+  height: 22px;
+  width: 22px;
+}
